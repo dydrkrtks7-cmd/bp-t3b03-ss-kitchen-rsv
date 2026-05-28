@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>생생 주방 - 정보 | 가맹의 진실, 거리의 증거</title>
+    <meta name="description" content="서울의 거리 본능, 생생 주방의 모든 것. 음식점 가맹점 모집에 대한 냉정한 데이터와 철학. 규격화된 프랜차이즈에 속지 마라. 전화: 010-6279-0862.">
+    <meta name="keywords" content="음식점 가맹점 모집, 생생 주방 정보, 브루탈리즘 주방, 거리 감각 창업, 서울 지역 가맹, 본능 주방">
+    <link rel="canonical" href="https://t3b03-ss-kitchen-rsv.pages.dev/info">
+    <meta property="og:title" content="생생 주방 - 정보 | 거리 본능의 데이터">
+    <meta property="og:description" content="서울의 거리 본능, 생생 주방의 모든 것. 음식점 가맹점 모집에 대한 냉정한 데이터와 철학.">
+    <style>
+        /* RESET & BASE */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 0 1rem;
+            min-height: 100vh;
+        }
+        a {
+            color: #ff5722;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        a:hover {
+            color: #ffab00;
+        }
+        img, svg {
+            max-width: 100%;
+            display: block;
+        }
+        ul, ol {
+            list-style: none;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.05em;
+        }
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            color: #ff5722;
+            text-shadow: 0 0 10px #ff572288, 0 0 20px #ff572244;
+            word-break: break-word;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin: 2.5rem 0 1rem;
+            border-left: 6px solid #ff5722;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 0.75rem;
+            color: #ffab00;
+        }
+        p, li, blockquote {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            max-width: 70ch;
+        }
+
+        /* LAYOUT */
+        .site-wrap {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            border: 2px solid #ff5722;
+            background: #111;
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            html { font-size: 14px; }
+            .site-wrap { padding: 1rem; margin: 1rem; }
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 2rem; }
+        }
+
+        /* CONTAINERS */
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .card {
+            border: 1px solid #333;
+            padding: 1.5rem;
+            background: #1a1a1a;
+            transition: border 0.2s;
+        }
+        .card:hover {
+            border-color: #ff5722;
+        }
+        blockquote {
+            border-left: 4px solid #ff5722;
+            padding-left: 1rem;
+            font-style: italic;
+            background: #1a1a1a;
+            margin: 1.5rem 0;
+        }
+        .highlight {
+            color: #ffab00;
+            font-weight: bold;
+        }
+        .tel-link {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #ff5722;
+            background: #000;
+            padding: 0.5rem 1.5rem;
+            border: 2px solid #ff5722;
+            text-decoration: none;
+            margin: 1rem 0;
+        }
+        .tel-link:hover {
+            background: #ff5722;
+            color: #000;
+        }
+        /* nav */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+            padding: 1rem 0;
+            border-bottom: 2px solid #333;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            color: #ff5722;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #ffab00;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            nav {
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+        /* FAQ */
+        .faq-item {
+            margin: 1.5rem 0;
+            border: 1px solid #333;
+            padding: 1rem;
+        }
+        .faq-item h3 {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item p {
+            margin-top: 0.75rem;
+            border-top: 1px solid #333;
+            padding-top: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-wrap">
+        <nav>
+            <a href="/">HOME</a>
+            <a href="/info" style="color:#ffab00; text-decoration:underline;">정보</a>
+            <a href="/menu">메뉴</a>
+            <a href="/franchise">가맹</a>
+            <a href="/contact">문의</a>
+        </nav>
+
+        <h1>📢 가맹의 진실, 거리의 증거</h1>
+        <p class="highlight">서울의 거리에서 태어난 주방. 규격을 거부하는 본능. 음식점 가맹점 모집의 새로운 기준을 제시한다.</p>
+
+        <h2>생생 주방은 무엇인가?</h2>
+        <p>브루탈리즘 감성의 철근 콘크리트 주방. 화려한 간판과 인테리어에 속지 마라. 우리는 거친 거리의 맛을 그대로 옮겼다. 음식점 가맹점 모집 광고에 속아서 평범한 프랜차이즈에 돈을 쏟지 마라. 생생 주방은 철학이다. 본능이다.</p>
+        <blockquote>“프랜차이즈 규격은 다 뻥이다. 진짜 맛은 거리에서 나온다. 우리는 그걸 증명한다.” — 생생 주방 대표</blockquote>
+
+        <h2>지역 시그널: 서울, 거리의 심장</h2>
+        <p>홍대, 연남, 성수, 을지로. 이 동네들은 가짜 감성으로 가득하다. 생생 주방은 그 틈을 비집고 들어간다. 서울의 진짜 거리 문화, 본능적인 맛을 원한다면 우리가 답이다. <span class="highlight">지역 상수: 서울 도심, 관악구, 마포구 핵심 상권 타겟.</span></p>
+
+        <div class="grid-cards">
+            <div class="card">
+                <h3>🗿 브루탈리즘 3원칙</h3>
+                <ul>
+                    <li>① 장식은 범죄다. 맛만으로 승부한다.</li>
+                    <li>② 가맹비는 최소. 숨은 비용은 없다.</li>
+                    <li>③ 본사 간섭 최소. 자율 운영 원칙.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>📊 데이터로 보는 차이</h3>
+                <p>일반 프랜차이즈: 가맹비 2000만 원대, 로열티 5%, 인테리어 강제.<br>
+                <span class="highlight">생생 주방: 가맹비 890만 원, 로열티 2%, 인테리어 자유 (철근 콘크리트 권장).</span><br>
+                거짓말 같은 진실. 입증된 데이터.</p>
+            </div>
+            <div class="card">
+                <h3>💀 거리의 본능</h3>
+                <p>우리는 SNS 마케팅에 목숨 걸지 않는다. 맛과 분위기가 입소문을 만든다. 음식점 가맹점 모집의 패러다임을 바꾼다.</p>
+            </div>
+        </div>
+
+        <h2>FAQ — 당신이 궁금해하는 모든 거친 진실</h2>
+
+        <div class="faq-item">
+            <h3>생생 주방은 왜 이렇게 투박한가?</h3>
+            <p>규격화된 인테리어는 소비자를 속이는 전략이다. 우리는 거친 콘크리트, 노출 배관, 생생 주방의 본질을 드러낸다. 진짜 맛은 화려한 접시 위에 있지 않다.</p>
+        </div>
+        <div class="faq-item">
+            <h3>가맹점 창업 비용이 진짜 저렴한가?</h3>
+            <p>광고비, 로열티, 강제 인테리어 비용을 모두 깎았다. 890만 원의 가맹비+기본 설비 비용. 자세한 견적은 전화로만 공개한다. 이유는? 프랜차이즈 업계의 거품을 깨기 위해.</p>
+        </div>
+        <div class="faq-item">
+            <h3>서울 외 지역도 가능한가?</h3>
+            <p>우선은 서울 도심 + 수도권에 집중한다. 지방은 거리의 본능이 다르다. 우리는 진짜 거리의 정수를 원한다. 서울에서 증명하고 확장할 것이다.</p>
+        </div>
+        <div class="faq-item">
+            <h3>가맹 문의는 어떻게 하나?</h3>
+            <p>전화 한 통이면 된다. 이메일, 카톡, 홈페이지 문의 다 거른다. <span class="highlight">010-6279-0862</span>로 직접 전화하라. 규격화된 상담은 없다. 거친 목소리로 직접 설명한다.</p>
+        </div>
+
+        <h2>지금 바로 행동하라</h2>
+        <p>음식점 가맹점 모집 광고 쓰레기통에 버려라. 생생 주방은 약속한다: 우리는 규격을 만들지 않는다. 본능을 따른다. 전화 한 통이 당신의 주방을 바꾼다.</p>
+        <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+
+        <footer style="margin-top:3rem; border-top:2px solid #333; padding-top:1.5rem; font-size:0.8rem; color:#666; text-align:center;">
+            <p>생생 주방 — 거리의 본능. 음식점 가맹점 모집 중. 서울, 한국. 등록번호: 2025-서울마포-00456 | 상호: (주)생생</p>
+        </footer>
+    </div>
+</body>
+</html>

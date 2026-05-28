@@ -1,199 +1,627 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영화 미학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>생생 주방 - 음식점 가맹점 모집 | 거리 감각의 정수</title>
+    <meta name="description" content="거리의 본능, 생생 주방. 음식점 가맹점 모집 중. 규격을 거부하는 브루탈리즘 감성의 주방 창업. 지금 전화하세요: 010-6279-0862. 틀에 박힌 프랜차이즈는 그만.">
+    <meta name="keywords" content="음식점 가맹점 모집, 생생 주방, 거리 감각, 브루탈리즘, 창업, 외식 창업, 가맹 문의">
+    <link rel="canonical" href="https://t3b03-ss-kitchen-rsv.pages.dev/">
+    <meta property="og:title" content="생생 주방 - 음식점 가맹점 모집 | 거리 감각의 정수">
+    <meta property="og:description" content="거리의 본능, 생생 주방. 음식점 가맹점 모집 중. 규격을 거부하는 브루탈리즘 감성의 주방 창업.">
+    <meta property="og:url" content="https://t3b03-ss-kitchen-rsv.pages.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Impact' font-size='80' fill='%23ff3b00'%3E생생 주방%3C/text%3E%3C/svg%3E">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="생생 주방 - 음식점 가맹점 모집 | 거리 감각의 정수">
+    <meta name="twitter:description" content="거리의 본능, 생생 주방. 음식점 가맹점 모집 중. 규격을 거부하는 거친 감성의 주방 창업.">
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Impact' font-size='80' fill='%23ff3b00'%3E생생 주방%3C/text%3E%3C/svg%3E">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "생생 주방",
+        "description": "거리의 본능을 담은 음식점 가맹점 모집. 브루탈리즘 감성의 독창적인 주방 창업.",
+        "url": "https://t3b03-ss-kitchen-rsv.pages.dev/",
+        "telephone": "+82-10-6279-0862",
+        "areaServed": "KR",
+        "foundingDate": "2025",
+        "logo": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 80'%3E%3Crect width='200' height='80' fill='%23000'/%3E%3Ctext x='10' y='50' font-family='Impact' font-size='40' fill='%23ff3b00'%3E생생%3C/text%3E%3C/svg%3E",
+        "sameAs": [
+            "https://t3b03-ss-kitchen-rsv.pages.dev/"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "대한민국 전역",
+            "addressRegion": "전국"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "24"
+        }
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+    <style>
+        /* RESET & BASE */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            background: #000;
+            color: #fff;
+            font-family: Impact, 'Arial Black', system-ui, -apple-system, sans-serif;
+            font-weight: 400;
+            line-height: 1.2;
+            -webkit-font-smoothing: antialiased;
+        }
+        body {
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        img, svg {
+            display: block;
+            max-width: 100%;
+        }
+        ul, ol {
+            list-style: none;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 {
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: clamp(3.2rem, 12vw, 6rem);
+            line-height: 0.9;
+            color: #ff3b00;
+        }
+        h2 {
+            font-size: clamp(2.4rem, 8vw, 4rem);
+            line-height: 1;
+            color: #fff;
+        }
+        h3 {
+            font-size: clamp(1.6rem, 5vw, 2.4rem);
+            line-height: 1.1;
+            color: #fff;
+        }
+        p, li, blockquote {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        /* LAYOUT */
+        .site-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            padding: 32px 72px 72px;
+            max-width: none;
+            width: 100%;
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            .site-wrap {
+                padding: 24px 24px 48px;
+                gap: 32px;
+            }
+        }
+
+        /* CONTAINERS */
+        section {
+            margin-bottom: 120px;
+            border-bottom: 3px solid #ff3b00;
+            padding-bottom: 60px;
+        }
+        @media (max-width: 768px) {
+            section {
+                margin-bottom: 80px;
+                padding-bottom: 40px;
+            }
+        }
+
+        /* HEADER / NAV */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0 32px;
+            border-bottom: 4px solid #fff;
+            margin-bottom: 24px;
+            position: relative;
+        }
+        .logo {
+            font-size: 2.8rem;
+            color: #ff3b00;
+            letter-spacing: -0.05em;
+            transform: rotate(-2deg);
+            display: inline-block;
+        }
+        .logo span {
+            color: #fff;
+            font-size: 1.2rem;
+            display: block;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 0.2em;
+            margin-top: -0.4rem;
+        }
+        nav {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+        nav a {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            border: 3px solid transparent;
+            padding: 8px 12px;
+            transition: 0.1s;
+            letter-spacing: 0.1em;
+        }
+        nav a:hover {
+            border-color: #ff3b00;
+            background: #ff3b00;
+            color: #000;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+            border: 3px solid #fff;
+            background: none;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #fff;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background: #000;
+                border: 4px solid #ff3b00;
+                flex-direction: column;
+                padding: 24px;
+                min-width: 220px;
+                z-index: 100;
+                gap: 16px;
+            }
+            nav.open {
+                display: flex;
+            }
+            nav a {
+                font-size: 1.8rem;
+                border: none;
+                padding: 8px 0;
+            }
+            nav a:hover {
+                background: none;
+                color: #ff3b00;
+                border: none;
+            }
+        }
+
+        /* HERO */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            padding: 40px 0;
+            margin-top: -20px;
+            background: repeating-linear-gradient(45deg, #111 0px, #111 2px, #000 2px, #000 6px);
+            border: 4px solid #ff3b00;
+            transform: skew(0deg, 0.5deg);
+            padding: 48px 32px;
+            min-height: 70vh;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 32px;
+                padding: 32px 20px;
+                min-height: auto;
+                transform: none;
+            }
+        }
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .hero-text h1 {
+            text-shadow: 6px 6px 0 #000, 8px 8px 0 #ff3b00;
+        }
+        .hero-text .tagline {
+            font-size: 1.6rem;
+            color: #fff;
+            background: #000;
+            padding: 8px 16px;
+            border-left: 8px solid #ff3b00;
+            font-family: 'Courier New', monospace;
+            text-transform: uppercase;
+        }
+        .hero-cta {
+            display: inline-block;
+            background: #ff3b00;
+            color: #000;
+            font-size: 2rem;
+            padding: 16px 32px;
+            border: 4px solid #fff;
+            text-align: center;
+            margin-top: 24px;
+            transition: 0.1s;
+            font-family: Impact, sans-serif;
+            letter-spacing: 0.05em;
+            transform: rotate(-1deg);
+            width: fit-content;
+        }
+        .hero-cta:hover {
+            background: #fff;
+            color: #000;
+            border-color: #ff3b00;
+            transform: rotate(1deg) scale(1.02);
+        }
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            border: 4px solid #fff;
+            padding: 32px;
+            min-height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-visual svg {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+        .hero-visual::after {
+            content: '';
+            position: absolute;
+            top: -10px; left: -10px; right: -10px; bottom: -10px;
+            background: repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255,59,0,0.08) 20px, rgba(255,59,0,0.08) 21px);
+            pointer-events: none;
+        }
+
+        /* SECTION COMMON */
+        .section-title {
+            margin-bottom: 48px;
+            border-bottom: 4px solid #ff3b00;
+            display: inline-block;
+            padding-bottom: 8px;
+            transform: skew(-2deg);
+        }
+
+        /* WHY SECTION (asymmetric blocks) */
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 64px 48px;
+            align-items: start;
+        }
+        @media (max-width: 768px) {
+            .why-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+        .why-block {
+            border: 4px solid #fff;
+            padding: 32px;
+            background: #000;
+            transform: rotate(0.3deg);
+            position: relative;
+        }
+        .why-block:nth-child(2) {
+            margin-top: 60px;
+            border-color: #ff3b00;
+            transform: rotate(-0.8deg);
+        }
+        .why-block h3 {
+            margin-bottom: 16px;
+            color: #ff3b00;
+        }
+        .why-block ul {
+            list-style: disc inside;
+            font-family: 'Courier New', monospace;
+            color: #ccc;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .why-block ul li::marker {
+            color: #ff3b00;
+        }
+
+        /* REVIEWS (UGC cards) */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 48px;
+            margin-top: 24px;
+        }
+        .review-card {
+            border: 4px solid #fff;
+            padding: 24px;
+            background: #0a0a0a;
+            transform: rotate(var(--rot, 0deg));
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .review-card:nth-child(odd) {
+            --rot: 0.8deg;
+        }
+        .review-card:nth-child(even) {
+            --rot: -0.6deg;
+        }
+        .review-card:hover {
+            border-color: #ff3b00;
+            background: #111;
+        }
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #888;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+        }
+        .review-name {
+            font-weight: bold;
+            color: #fff;
+        }
+        .review-date {
+            font-family: 'Courier New', monospace;
+        }
+        .review-stars {
+            color: #ff3b00;
+            font-size: 1.4rem;
+            letter-spacing: 4px;
+        }
+        .review-text {
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            color: #bbb;
+            line-height: 1.5;
+            flex: 1;
+        }
+
+        /* CONTACT */
+        .contact-block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px 64px;
+            align-items: center;
+            border: 4px solid #ff3b00;
+            padding: 48px 32px;
+            background: #0a0a0a;
+        }
+        .contact-block h2 {
+            font-size: 2.4rem;
+            flex: 1;
+            min-width: 200px;
+        }
+        .contact-phone {
+            font-size: 3rem;
+            color: #ff3b00;
+            border: 4px solid #fff;
+            padding: 16px 32px;
+            display: inline-block;
+            font-family: Impact, sans-serif;
+            letter-spacing: 0.05em;
+            transform: rotate(-0.5deg);
+            transition: 0.1s;
+        }
+        .contact-phone:hover {
+            background: #ff3b00;
+            color: #000;
+            border-color: #ff3b00;
+            transform: rotate(0.5deg) scale(1.02);
+        }
+        .contact-phone a {
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .contact-phone {
+                font-size: 2rem;
+                padding: 12px 20px;
+            }
+            .contact-block {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+            }
+        }
+
+        /* CTA BANNER */
+        .cta-banner {
+            background: #ff3b00;
+            color: #000;
+            padding: 48px 32px;
+            border: 4px solid #fff;
+            text-align: center;
+            transform: skew(0deg, -0.7deg);
+            margin-top: 40px;
+        }
+        .cta-banner h2 {
+            color: #000;
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+        .cta-banner p {
+            color: #1a1a1a;
+            font-size: 1.2rem;
+            font-family: 'Courier New', monospace;
+            max-width: 600px;
+            margin: 0 auto 24px;
+        }
+        .cta-banner a {
+            display: inline-block;
+            background: #000;
+            color: #ff3b00;
+            border: 4px solid #fff;
+            padding: 16px 48px;
+            font-size: 2rem;
+            font-family: Impact, sans-serif;
+            transition: 0.1s;
+        }
+        .cta-banner a:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 4px solid #fff;
+            padding-top: 48px;
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        footer .copyright {
+            font-family: 'Courier New', monospace;
+        }
+        footer .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+        footer .footer-links a {
+            border-bottom: 2px solid transparent;
+        }
+        footer .footer-links a:hover {
+            border-bottom-color: #ff3b00;
+            color: #ff3b00;
+        }
+
+        /* UTILITY overrides */
+        .text-accent {
+            color: #ff3b00;
+        }
+        .text-mono {
+            font-family: 'Courier New', monospace;
+        }
+        .border-accent {
+            border-color: #ff3b00 !important;
+        }
+        .negative-margin {
+            margin-left: -32px;
+            margin-right: -32px;
+        }
+        @media (max-width: 768px) {
+            .negative-margin {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>영화 미학 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>영화 미학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h3>
-          <p>세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체...</p>
-        </a>
-      
+    <div class="site-wrap">
+        <!-- HEADER -->
+        <header>
+            <div class="logo">
+                생생주방
+                <span>거리의 본능</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="nav">
+                <a href="#why">왜 생생?</a>
+                <a href="#reviews">후기</a>
+                <a href="#contact">연락</a>
+                <a href="tel:+821062790862">전화</a>
+            </nav>
+        </header>
 
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h3>
-          <p>스크린 위에 깃드는 기괴하고 날카로운 서스펜스를 조율할 때 필수로 채용되는 특수 타악기인 워터폰은 청동 실린더 내부에 차 있는 물의 양에 따라 공진 주파수가 극적으로 변하여 사람의...</p>
-        </a>
-      
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <div class="hero-text">
+                <h1>가맹점<br>모집중</h1>
+                <div class="tagline">규격을 거부하는 주방의 탄생</div>
+                <p class="text-mono" style="font-size:1.1rem; color:#bbb;">
+                    평범한 프랜차이즈는 이제 지겹지?<br>
+                    생생 주방은 거리의 본능을 요리한다.<br>
+                    틀을 깨고 싶은 당신, 바로 지금.
+                </p>
+                <a href="tel:+821062790862" class="hero-cta">☎ 010-6279-0862</a>
+            </div>
+            <div class="hero-visual">
+                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="300" fill="#111" rx="0" ry="0"/>
+                    <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" font-family="Impact" font-size="80" fill="#ff3b00" transform="rotate(-6, 200, 120)">KITCHEN</text>
+                    <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" font-family="Courier New" font-size="28" fill="#fff" transform="rotate(3, 200, 200)">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</text>
+                    <circle cx="320" cy="60" r="12" fill="#ff3b00" opacity="0.8"/>
+                    <circle cx="80" cy="240" r="8" fill="#fff" opacity="0.6"/>
+                    <rect x="20" y="20" width="30" height="30" fill="none" stroke="#ff3b00" stroke-width="6" transform="rotate(15, 35, 35)"/>
+                    <rect x="350" y="250" width="30" height="30" fill="none" stroke="#fff" stroke-width="6" transform="rotate(-15, 365, 265)"/>
+                </svg>
+            </div>
+        </section>
 
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h3>
-          <p>완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자...</p>
-        </a>
-      
+        <!-- WHY SECTION -->
+        <section id="why">
+            <h2 class="section-title">왜 생생 주방인가</h2>
+            <div class="why-grid">
+                <div class="why-block">
+                    <h3>⬛ 거리의 DNA</h3>
+                    <ul>
+                        <li>프랜차이즈 매뉴얼은 쓰레기통에 던져라</li>
+                        <li>자유로운 메뉴 구성, 우리만의 소스</li>
+                        <li>가맹비 0원, 본사 간섭 0%</li>
+                        <li>매장 인테리어부터 마케팅까지 창의성 존중</li>
+                    </ul>
+                </div>
+                <div class="why-block">
+                    <h3>⬛ 본사가 보장하는 것</h3>
+                    <ul>
+                        <li>서플라이 체인을 장악한 피와 땀</li>
+                        <li>24시간 운영 노하우 전수</li>
+                        <li>매주 신선한 혈압(?) 같은 트렌드 공유</li>
+                        <li>당신이 망해도 다시 일으켜 세울 의지</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 화곡 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 화곡 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+        <!-- REVIEWS (UGC) -->
+        <section id="reviews">
 </body>
 </html>
