@@ -1,48 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[음식점가맹]]></title>
-  <link>https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv</link>
-  <description><![CDATA[음식점가맹 - 음식점 가맹점 모집 관련 최신 소식 및 가이드]]></description>
-  <language>ko</language>
-  <pubDate>Wed, 10 Jun 2026 21:02:14 GMT</pubDate>
-  <lastBuildDate>Wed, 10 Jun 2026 21:02:14 GMT</lastBuildDate>
-  <atom:link href="https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[상수 음식점 가맹점 모집]]></title>
+  <link>https://t3b03-ss-kitchen-rsv.pages.dev</link>
+  <description><![CDATA[상수 음식점가맹 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
+  <language>ko-KR</language>
+  <pubDate>Thu, 28 May 2026 14:14:10 GMT</pubDate>
+  <lastBuildDate>Thu, 28 May 2026 14:14:10 GMT</lastBuildDate>
+  <atom:link href="https://t3b03-ss-kitchen-rsv.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[Q4_K_M 양자화, 그 숨겨진 딜레마: 히든 딤 컷오프와 Instruction Following의 미묘한 파국]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/posts/guide-003.html</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/posts/guide-003.html</guid>
-      <description><![CDATA[q4_k_m quantization, llm, deep learning, neural network, hidden dimension, cut off, artifact, instruction following, performance degradation, paramete]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[가맹점 모집의 실체, 3개월간의 리얼 리뷰: 나는 어떻게 손실을 보았는가]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/posts/review-001.html</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/posts/review-001.html</guid>
-      <description><![CDATA[### 서론나는 최근에 음식점 가맹점 모집을 위해 AWS Lightsail 인스턴스를 사용하고 있었다. 하지만 예약 인스턴스 구매 직전 가격 인하 공지를 놓쳐서 발생한 손실로 인해 큰 손해를 보았다. 이 경험을 통해私は 클라우드 인프라의 중요성을 다시 한번 깨닫게 되었]]></description>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[음식점 가맹점 모집 솔직 후기 — 3개월 써본 사람의 리얼 리뷰]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/posts/review-002-d11fz4.html</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/posts/review-002-d11fz4.html</guid>
-      <description><![CDATA[아, 진짜... 2023년 겨울, 서버실 온도가 45도까지 치솟았다. 기계들의 고통을 느낄 정도였다. Llama 3.1 8B 모델에서 RoPE theta 값을 50만에서 5000만으로 조정했지만, Perplexity 값이 크게 변하지 않았다. 어텐션 패턴도 예상대로 변]]></description>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[RC3, 대체 왜 삭제됐을까? 아파치 슈퍼셋 2.0, 그 뒤에 숨겨진 썰 풀어요 썰! 🤫]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/posts/review-002.html</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/posts/review-002.html</guid>
-      <description><![CDATA[apache superset, logo, programming, code, software development, ui, ux, dashboard, data visualization, analytics, business intelligence, open source, ]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title><![CDATA[주문 번호 날짜별 추적 방법]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/posts/t3link-001-d11fz4.html</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-t3b03-ss-kitchen-rsv/posts/t3link-001-d11fz4.html</guid>
-      <description><![CDATA[제목: 창작한 제목 | Fail Fast Lessons from Apache Superset RC3's Purgation 아, 진짜... Apache Superset 2.0 릴리스에서 PyPI로 삭제된 RC3 빌드의 취약점과 실제 사유를 깊이 들여다보면, 우리는 실시간]]></description>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+      <title><![CDATA[상수 음식점 가맹점 모집 - 공식 홈페이지 오픈 안내]]></title>
+      <link>https://t3b03-ss-kitchen-rsv.pages.dev/</link>
+      <guid isPermaLink="true">https://t3b03-ss-kitchen-rsv.pages.dev/</guid>
+      <description><![CDATA[상수 음식점가맹 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
+      <pubDate>Thu, 28 May 2026 14:14:10 GMT</pubDate>
     </item>
 </channel>
 </rss>
